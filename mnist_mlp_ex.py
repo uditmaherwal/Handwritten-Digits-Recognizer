@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+@ Author : Udit Maherwal
+@ Date : January 17 2020
 # # Multi-Layer Perceptron, MNIST
 # ---
 # In this notebook, we will train an MLP to classify images from the [MNIST database](http://yann.lecun.com/exdb/mnist/) hand-written digit database.
@@ -295,10 +296,5 @@ for idx in np.arange(20):
     ax.imshow(np.squeeze(images[idx]), cmap='gray')
     ax.set_title("{} ({})".format(str(preds[idx].item()), str(labels[idx].item())),
                  color=("green" if preds[idx]==labels[idx] else "red"))
-
-
-# In[ ]:
-
-
-
-
+    
+ @ Done ! Use cuda drivers for having this model run faster than usual..
